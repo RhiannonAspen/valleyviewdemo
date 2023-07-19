@@ -26,22 +26,22 @@
 		<!--Navigation-->
 		<nav>
 			<ul>
-				<li><a href="#ownerstatement">Meet the Owner</a></li>
+				<li><a class="glowhover" href="#ownerstatement">Meet the Owner</a></li>
 				<li><a href="#"><h1>Valley View Massage</h1></a></li>
-				<li><a href="#services">Services</a></li>
+				<li><a class="glowhover" href="#services">Services</a></li>
 			</ul>
 		</nav>
 
 		<div class="herocontent">
 			<h1>Valley View Theraputic Massage</h1>
 			<h2>Providing Massage Therapy and Reflexology to Yukon, Oklahoma for 20+ years</h2>
-			<button id="contactnow">Set up an appointment now!</button>
+			<button id="contactnow" onClick="document.getElementById('footer-container').scrollIntoView();">Set up an appointment now!</button>
 		</div>
 		
 	</section>
 
 	<!--Statement from Owner-->
-	<section id="ownerstatement">
+	<section id="ownerstatement" class="glowhover-green">
 		<p>"We believe whether your need is to have a moment of relaxation from your busy, stressful, everyday schedule, or simply to reduce muscle tension, attain relief from chronic pain, a therapeutic massage can balance your overall sense of emotional and physical well-being. Massage therapy can be an important part of your health maintenance plan.<br><b> - Nuvit Westmuckett (Owner of Valley View Theraputic Massage)</b></p>
 		<img src="images/nuvit.jpg" alt="Photo of Nuvit Westmuckett">
 	</section>
@@ -89,10 +89,12 @@
 			<p><i class="fa fa-map-marker" aria-hidden="true"></i> 801 W Main, Ste C, Yukon, OK, United States, Oklahoma</p>
 			<p><i class="fa fa-phone" aria-hidden="true"></i> (405) 808-4441<br>
 			Quickest and Perfered form of contact is over the phone.</p>
+			<p><a href="https://www.facebook.com/p/Valley-View-Wellness-Spa-100063566650860/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
 			<h5><i class="fa fa-copyright" aria-hidden="true"></i> 2023 Valley View Theraputic Massage</h5>
 		</div>
 		<div class="contactform">
 			<h5>Get in Contact via Email</h5>
+
 			<form action="https://formsubmit.co/d7735fbee82141545fd9462b7e3b6cba" method="POST">
 				<!--HoneyPot / Spam Prevention-->
 				<input type="text" name="_honey" style="display: none;">
@@ -105,9 +107,9 @@
 
 				<!--Form Contents-->
 				<label for="name">Full Name:</label><br>
-				<input type="text" id="name" name="name"><br>
+				<input type="text" id="name" name="name" required><br>
 				<label for="email">Email:</label><br>
-				<input type="text" id="email" name="email"><br>
+				<input type="text" id="email" name="email"required><br>
 				<label for="email">Message:</label><br>
 				<textarea name="message" rows="2" cols="40"></textarea> <br>
 				<input type="submit" value="Submit">
