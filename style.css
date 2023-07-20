@@ -36,7 +36,6 @@ body {
 
 		nav li {
 			display: inline-block;
-
 			list-style: none;
 			padding: 0 20px;
 		}
@@ -387,10 +386,109 @@ body {
 /* -----------------------------For Mobile Portrait View */
 @media screen and (max-width: 480px)
     and (orientation: portrait) {
-    #hero {
-				background-image: none;
-				background-color: lightblue;
-			}
+
+		nav {
+			justify-content: center;
+			height: 25%;
+			background: rgba(0, 0, 0, 0);
+		}
+
+		nav ul {
+			display: flex;
+			flex-flow: row nowrap;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+		}
+
+		nav li {
+			flex: 1;
+			padding: 0 0.25em;
+			margin: 1%;
+		}
+
+		/*Company Name*/
+		h1 {
+			text-align: center;
+			padding: 10px;
+			font-family: 'Yeseva One', cursive;
+			font-size: 3em;
+		    width: 75%;
+		    padding-top: 25%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		/*Company Slogan*/
+		h2 {
+			text-align: center;
+			font-size: 1em;
+		    color: black;
+		    margin-right: 5%;
+		}
+
+		/*Contact Now Button*/
+		#contactnow {
+			margin-top: 25%;
+			padding: 0.5em;
+			font-size: 1em;
+		  	width: 75%;
+
+		}
+
+		#ownerstatement {
+			height: auto;
+			margin-left: auto; margin-right: auto;
+			width: 100%;
+			display: flex;
+			flex-flow: column wrap;
+			background-color: var(--maingreen);
+		}
+
+		#ownerstatement > p {
+			margin-left: 25%;
+			margin-right: auto;
+			font-size: 1em;
+		}
+
+		#ownerstatement > img {
+			border: 10px var(--darkergreen) solid;
+			height: auto;
+			max-height: 200px;
+			width: auto;
+			max-width: 200px;
+			margin-left: 25%;
+		}
+
+		#service-container {
+			flex-flow: wrap;
+			gap: 1em;
+		}
+
+		.services {
+			margin-left: 10%; margin-right: 10%;
+			margin-bottom: 8%;
+			width: 50%;
+		}
+
+		.service > img {
+			height: 50%;
+			max-height: 100px;
+			width: 100%;
+			max-width: 100px;
+			background-position: center;
+			border-radius: 100px;
+		}
+
+		footer {
+			height: 60vh;
+			flex-flow: column wrap ;
+		}
+		footer > div {
+			flex: 1;
+			margin: 1em;
+			margin-right: 10%;
+		}
 }
  
 /* -----------------------------For Mobile Landscape View */
@@ -398,7 +496,7 @@ body {
     and (orientation: landscape) {
     #hero {
 				background-image: none;
-				background-color: lightcyan;
+				background-color: lightgoldenrodyellow;
 			}
 }
  
